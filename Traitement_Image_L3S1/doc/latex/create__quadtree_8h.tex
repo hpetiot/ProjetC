@@ -1,0 +1,44 @@
+\hypertarget{create__quadtree_8h}{}\section{includes/create\+\_\+quadtree.h File Reference}
+\label{create__quadtree_8h}\index{includes/create\+\_\+quadtree.\+h@{includes/create\+\_\+quadtree.\+h}}
+{\ttfamily \#include \char`\"{}color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}list\+\_\+errors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}zone.\+h\char`\"{}}\newline
+Include dependency graph for create\+\_\+quadtree.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{create__quadtree_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{create__quadtree_8h_a8c1b0fdfc626727ca3e8f31b0f4af1e9}{create\+\_\+quadtree} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, M\+L\+V\+\_\+\+Image $\ast$image, \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$list\+\_\+errors)
+\begin{DoxyCompactList}\small\item\em Create a quadtree from scratch based on an image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{create__quadtree_8h_a8c1b0fdfc626727ca3e8f31b0f4af1e9}\label{create__quadtree_8h_a8c1b0fdfc626727ca3e8f31b0f4af1e9}} 
+\index{create\+\_\+quadtree.\+h@{create\+\_\+quadtree.\+h}!create\+\_\+quadtree@{create\+\_\+quadtree}}
+\index{create\+\_\+quadtree@{create\+\_\+quadtree}!create\+\_\+quadtree.\+h@{create\+\_\+quadtree.\+h}}
+\subsubsection{\texorpdfstring{create\+\_\+quadtree()}{create\_quadtree()}}
+{\footnotesize\ttfamily int create\+\_\+quadtree (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{M\+L\+V\+\_\+\+Image $\ast$}]{image,  }\item[{\hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$}]{list\+\_\+errors }\end{DoxyParamCaption})}
+
+
+
+Create a quadtree from scratch based on an image. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The quadtree we\textquotesingle{}ll create \\
+\hline
+{\em image} & The image we\textquotesingle{}ll create the quadtree from \\
+\hline
+{\em list\+\_\+errors} & All errors value from quadtree\textquotesingle{}s leaf \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if we couldn\textquotesingle{}t create the quadtree 1 if the quadtree was created 
+\end{DoxyReturn}

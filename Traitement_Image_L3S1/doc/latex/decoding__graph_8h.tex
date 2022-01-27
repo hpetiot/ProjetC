@@ -1,0 +1,63 @@
+\hypertarget{decoding__graph_8h}{}\section{includes/decoding\+\_\+graph.h File Reference}
+\label{decoding__graph_8h}\index{includes/decoding\+\_\+graph.\+h@{includes/decoding\+\_\+graph.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}decoding.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+Include dependency graph for decoding\+\_\+graph.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{decoding__graph_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{decoding__graph_8h_ad5c243dcdbedd8d87cd425631bdb44f6}{decoding\+\_\+graph} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Read an encoded colored graph file (.gmc) to fill a quadtree. \end{DoxyCompactList}\item 
+int \hyperlink{decoding__graph_8h_a81c1be8d0a41cd7b1724eb8e3dd482fd}{decoding\+\_\+graph\+\_\+bw} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Read an encoded B\&W graph file (.gmn) to fill a quadtree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{decoding__graph_8h_ad5c243dcdbedd8d87cd425631bdb44f6}\label{decoding__graph_8h_ad5c243dcdbedd8d87cd425631bdb44f6}} 
+\index{decoding\+\_\+graph.\+h@{decoding\+\_\+graph.\+h}!decoding\+\_\+graph@{decoding\+\_\+graph}}
+\index{decoding\+\_\+graph@{decoding\+\_\+graph}!decoding\+\_\+graph.\+h@{decoding\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{decoding\+\_\+graph()}{decoding\_graph()}}
+{\footnotesize\ttfamily int decoding\+\_\+graph (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Read an encoded colored graph file (.gmc) to fill a quadtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are filling \\
+\hline
+{\em file} & The file we are decoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/4 if the last character of the first string from the file wasn\textquotesingle{}t correctly writed (not a digit, nor \textquotesingle{}f\textquotesingle{}) -\/3 if a color wasn\textquotesingle{}t correctly writed (r, g, b or a $<$ 0 or $>$ 255) -\/2 if a leaf couldn\textquotesingle{}t be allocated -\/1 if a node couldn\textquotesingle{}t be allocated 0 if it worked 
+\end{DoxyReturn}
+\mbox{\Hypertarget{decoding__graph_8h_a81c1be8d0a41cd7b1724eb8e3dd482fd}\label{decoding__graph_8h_a81c1be8d0a41cd7b1724eb8e3dd482fd}} 
+\index{decoding\+\_\+graph.\+h@{decoding\+\_\+graph.\+h}!decoding\+\_\+graph\+\_\+bw@{decoding\+\_\+graph\+\_\+bw}}
+\index{decoding\+\_\+graph\+\_\+bw@{decoding\+\_\+graph\+\_\+bw}!decoding\+\_\+graph.\+h@{decoding\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{decoding\+\_\+graph\+\_\+bw()}{decoding\_graph\_bw()}}
+{\footnotesize\ttfamily int decoding\+\_\+graph\+\_\+bw (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Read an encoded B\&W graph file (.gmn) to fill a quadtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are filling \\
+\hline
+{\em file} & The file we are decoding \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/4 if the last character of the first string from the file wasn\textquotesingle{}t correctly writed (not a digit, nor \textquotesingle{}f\textquotesingle{}) -\/3 if a color wasn\textquotesingle{}t correctly writed (r, g, b or a $<$ 0 or $>$ 255) -\/2 if a leaf couldn\textquotesingle{}t be allocated -\/1 if a node couldn\textquotesingle{}t be allocated 0 if it worked 
+\end{DoxyReturn}

@@ -1,0 +1,294 @@
+\hypertarget{quadtree_8h}{}\section{includes/quadtree.h File Reference}
+\label{quadtree_8h}\index{includes/quadtree.\+h@{includes/quadtree.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+color.\+h$>$}\newline
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+image.\+h$>$}\newline
+Include dependency graph for quadtree.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{quadtree_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{quadtree_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{unionSub__tree}{Sub\+\_\+tree}
+\item 
+struct \hyperlink{structquad}{quad}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{quadtree_8h_a07c883b063ae8a373a3c9b5356f5fa8d}{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}~512
+\item 
+\#define \hyperlink{quadtree_8h_ad4064b9a55688d57356121bd89f34fd0}{N\+B\+\_\+\+S\+H\+A\+R\+ES}~131072
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structquad}{quad} \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608d}{Node\+\_\+type} \{ \hyperlink{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da150d9833918207030adb030ccc759c20}{L\+E\+AF}, 
+\hyperlink{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da59a889456a2d742fdca191dccb3e871d}{N\+O\+DE}
+ \}
+\item 
+enum \hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731}{Kid\+\_\+type} \{ \hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a0d077f5b932ce05e5b9f30c6087a2f31}{NO}, 
+\hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a4d3f872f5054b256b01ee4f2c8cf51db}{NE}, 
+\hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731af9f590fe6d84e72c832e714b75b1604b}{SO}, 
+\hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a61c600c17d14bd4db73433ddbb8491e8}{SE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{quadtree_8h_ac27735a0294f989007ba6509f74914f4}{is\+\_\+leaf} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Check if \char`\"{}t\char`\"{} is a leaf. \end{DoxyCompactList}\item 
+int \hyperlink{quadtree_8h_a501cabb1f7635abf0660b5fe7a5a8b78}{is\+\_\+node} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Check if \char`\"{}t\char`\"{} is a node. \end{DoxyCompactList}\item 
+int \hyperlink{quadtree_8h_aa93410d380db7cec4675f69eb188e97c}{has\+\_\+full\+\_\+leaf} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Check if \char`\"{}t\char`\"{} is a node, and if NO, NE, SE and SO are leaf. \end{DoxyCompactList}\item 
+void \hyperlink{quadtree_8h_a7ee52185703e339f9b37a0e84eba57f8}{print\+\_\+tree\+\_\+prefix} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Print a tree in prefix order. \end{DoxyCompactList}\item 
+void \hyperlink{quadtree_8h_a2d53b82f6524522d0ea84d28c9b9355a}{print\+\_\+node} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Print a node. \end{DoxyCompactList}\item 
+void \hyperlink{quadtree_8h_acbc1cb9bce582ea945e4a467c76a57aa}{free\+\_\+tree} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Free a tree. \end{DoxyCompactList}\item 
+void \hyperlink{quadtree_8h_ac566469b25896389b3c9d4098b42d61a}{free\+\_\+all\+\_\+leaf} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Free all t\textquotesingle{}s leaf. \end{DoxyCompactList}\item 
+void \hyperlink{quadtree_8h_a02d9ec6b7a28a38105be2476c5665410}{replace\+\_\+node\+\_\+to\+\_\+leaf} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$node, \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$leaf)
+\begin{DoxyCompactList}\small\item\em Replace a node with a leaf. \end{DoxyCompactList}\item 
+int \hyperlink{quadtree_8h_a7cc2fcae342be657d1cf8d848fd4ecce}{tree\+\_\+to\+\_\+image} (M\+L\+V\+\_\+\+Image $\ast$$\ast$img, \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Fill an image with a subtree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{quadtree_8h_ad4064b9a55688d57356121bd89f34fd0}\label{quadtree_8h_ad4064b9a55688d57356121bd89f34fd0}} 
+\index{quadtree.\+h@{quadtree.\+h}!N\+B\+\_\+\+S\+H\+A\+R\+ES@{N\+B\+\_\+\+S\+H\+A\+R\+ES}}
+\index{N\+B\+\_\+\+S\+H\+A\+R\+ES@{N\+B\+\_\+\+S\+H\+A\+R\+ES}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{N\+B\+\_\+\+S\+H\+A\+R\+ES}{NB\_SHARES}}
+{\footnotesize\ttfamily \#define N\+B\+\_\+\+S\+H\+A\+R\+ES~131072}
+
+\mbox{\Hypertarget{quadtree_8h_a07c883b063ae8a373a3c9b5356f5fa8d}\label{quadtree_8h_a07c883b063ae8a373a3c9b5356f5fa8d}} 
+\index{quadtree.\+h@{quadtree.\+h}!S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE@{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}}
+\index{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE@{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}{SIZE\_IMAGE}}
+{\footnotesize\ttfamily \#define S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE~512}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}\label{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}} 
+\index{quadtree.\+h@{quadtree.\+h}!Tree@{Tree}}
+\index{Tree@{Tree}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{Tree}{Tree}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structquad}{quad}  \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731}\label{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731}} 
+\index{quadtree.\+h@{quadtree.\+h}!Kid\+\_\+type@{Kid\+\_\+type}}
+\index{Kid\+\_\+type@{Kid\+\_\+type}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{Kid\+\_\+type}{Kid\_type}}
+{\footnotesize\ttfamily enum \hyperlink{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731}{Kid\+\_\+type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO@{NO}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!NO@{NO}}}\mbox{\Hypertarget{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a0d077f5b932ce05e5b9f30c6087a2f31}\label{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a0d077f5b932ce05e5b9f30c6087a2f31}} 
+NO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NE@{NE}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!NE@{NE}}}\mbox{\Hypertarget{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a4d3f872f5054b256b01ee4f2c8cf51db}\label{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a4d3f872f5054b256b01ee4f2c8cf51db}} 
+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SO@{SO}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!SO@{SO}}}\mbox{\Hypertarget{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731af9f590fe6d84e72c832e714b75b1604b}\label{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731af9f590fe6d84e72c832e714b75b1604b}} 
+SO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SE@{SE}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!SE@{SE}}}\mbox{\Hypertarget{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a61c600c17d14bd4db73433ddbb8491e8}\label{quadtree_8h_a54cad6fa8fbf6a3b3083585da4a26731a61c600c17d14bd4db73433ddbb8491e8}} 
+SE&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608d}\label{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608d}} 
+\index{quadtree.\+h@{quadtree.\+h}!Node\+\_\+type@{Node\+\_\+type}}
+\index{Node\+\_\+type@{Node\+\_\+type}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{Node\+\_\+type}{Node\_type}}
+{\footnotesize\ttfamily enum \hyperlink{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608d}{Node\+\_\+type}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+AF@{L\+E\+AF}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!L\+E\+AF@{L\+E\+AF}}}\mbox{\Hypertarget{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da150d9833918207030adb030ccc759c20}\label{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da150d9833918207030adb030ccc759c20}} 
+L\+E\+AF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+DE@{N\+O\+DE}!quadtree.\+h@{quadtree.\+h}}\index{quadtree.\+h@{quadtree.\+h}!N\+O\+DE@{N\+O\+DE}}}\mbox{\Hypertarget{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da59a889456a2d742fdca191dccb3e871d}\label{quadtree_8h_a4bafb4a83e1da39fd7547ca43cff608da59a889456a2d742fdca191dccb3e871d}} 
+N\+O\+DE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{quadtree_8h_ac566469b25896389b3c9d4098b42d61a}\label{quadtree_8h_ac566469b25896389b3c9d4098b42d61a}} 
+\index{quadtree.\+h@{quadtree.\+h}!free\+\_\+all\+\_\+leaf@{free\+\_\+all\+\_\+leaf}}
+\index{free\+\_\+all\+\_\+leaf@{free\+\_\+all\+\_\+leaf}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+all\+\_\+leaf()}{free\_all\_leaf()}}
+{\footnotesize\ttfamily void free\+\_\+all\+\_\+leaf (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Free all t\textquotesingle{}s leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we\textquotesingle{}ll free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{quadtree_8h_acbc1cb9bce582ea945e4a467c76a57aa}\label{quadtree_8h_acbc1cb9bce582ea945e4a467c76a57aa}} 
+\index{quadtree.\+h@{quadtree.\+h}!free\+\_\+tree@{free\+\_\+tree}}
+\index{free\+\_\+tree@{free\+\_\+tree}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+tree()}{free\_tree()}}
+{\footnotesize\ttfamily void free\+\_\+tree (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Free a tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we\textquotesingle{}ll free \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{quadtree_8h_aa93410d380db7cec4675f69eb188e97c}\label{quadtree_8h_aa93410d380db7cec4675f69eb188e97c}} 
+\index{quadtree.\+h@{quadtree.\+h}!has\+\_\+full\+\_\+leaf@{has\+\_\+full\+\_\+leaf}}
+\index{has\+\_\+full\+\_\+leaf@{has\+\_\+full\+\_\+leaf}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{has\+\_\+full\+\_\+leaf()}{has\_full\_leaf()}}
+{\footnotesize\ttfamily int has\+\_\+full\+\_\+leaf (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Check if \char`\"{}t\char`\"{} is a node, and if NO, NE, SE and SO are leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are looking at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if \char`\"{}t\char`\"{} is a node with only leafs 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{quadtree_8h_ac27735a0294f989007ba6509f74914f4}\label{quadtree_8h_ac27735a0294f989007ba6509f74914f4}} 
+\index{quadtree.\+h@{quadtree.\+h}!is\+\_\+leaf@{is\+\_\+leaf}}
+\index{is\+\_\+leaf@{is\+\_\+leaf}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+leaf()}{is\_leaf()}}
+{\footnotesize\ttfamily int is\+\_\+leaf (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Check if \char`\"{}t\char`\"{} is a leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are looking at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if \char`\"{}t\char`\"{} is a leaf 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{quadtree_8h_a501cabb1f7635abf0660b5fe7a5a8b78}\label{quadtree_8h_a501cabb1f7635abf0660b5fe7a5a8b78}} 
+\index{quadtree.\+h@{quadtree.\+h}!is\+\_\+node@{is\+\_\+node}}
+\index{is\+\_\+node@{is\+\_\+node}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{is\+\_\+node()}{is\_node()}}
+{\footnotesize\ttfamily int is\+\_\+node (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Check if \char`\"{}t\char`\"{} is a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are looking at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if \char`\"{}t\char`\"{} is a node 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{quadtree_8h_a2d53b82f6524522d0ea84d28c9b9355a}\label{quadtree_8h_a2d53b82f6524522d0ea84d28c9b9355a}} 
+\index{quadtree.\+h@{quadtree.\+h}!print\+\_\+node@{print\+\_\+node}}
+\index{print\+\_\+node@{print\+\_\+node}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+node()}{print\_node()}}
+{\footnotesize\ttfamily void print\+\_\+node (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Print a node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The node we\textquotesingle{}ll print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{quadtree_8h_a7ee52185703e339f9b37a0e84eba57f8}\label{quadtree_8h_a7ee52185703e339f9b37a0e84eba57f8}} 
+\index{quadtree.\+h@{quadtree.\+h}!print\+\_\+tree\+\_\+prefix@{print\+\_\+tree\+\_\+prefix}}
+\index{print\+\_\+tree\+\_\+prefix@{print\+\_\+tree\+\_\+prefix}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+tree\+\_\+prefix()}{print\_tree\_prefix()}}
+{\footnotesize\ttfamily void print\+\_\+tree\+\_\+prefix (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Print a tree in prefix order. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we\textquotesingle{}ll print \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{quadtree_8h_a02d9ec6b7a28a38105be2476c5665410}\label{quadtree_8h_a02d9ec6b7a28a38105be2476c5665410}} 
+\index{quadtree.\+h@{quadtree.\+h}!replace\+\_\+node\+\_\+to\+\_\+leaf@{replace\+\_\+node\+\_\+to\+\_\+leaf}}
+\index{replace\+\_\+node\+\_\+to\+\_\+leaf@{replace\+\_\+node\+\_\+to\+\_\+leaf}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{replace\+\_\+node\+\_\+to\+\_\+leaf()}{replace\_node\_to\_leaf()}}
+{\footnotesize\ttfamily void replace\+\_\+node\+\_\+to\+\_\+leaf (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{node,  }\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{leaf }\end{DoxyParamCaption})}
+
+
+
+Replace a node with a leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The node we replace \\
+\hline
+{\em leaf} & The leaf we take the fields from \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{quadtree_8h_a7cc2fcae342be657d1cf8d848fd4ecce}\label{quadtree_8h_a7cc2fcae342be657d1cf8d848fd4ecce}} 
+\index{quadtree.\+h@{quadtree.\+h}!tree\+\_\+to\+\_\+image@{tree\+\_\+to\+\_\+image}}
+\index{tree\+\_\+to\+\_\+image@{tree\+\_\+to\+\_\+image}!quadtree.\+h@{quadtree.\+h}}
+\subsubsection{\texorpdfstring{tree\+\_\+to\+\_\+image()}{tree\_to\_image()}}
+{\footnotesize\ttfamily int tree\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Image $\ast$$\ast$}]{img,  }\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Fill an image with a subtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em img} & The image we\textquotesingle{}ll fill \\
+\hline
+{\em t} & The tree we use to fill the image \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if we can fill the image 0 otherwise 
+\end{DoxyReturn}

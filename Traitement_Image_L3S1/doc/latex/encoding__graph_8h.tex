@@ -1,0 +1,75 @@
+\hypertarget{encoding__graph_8h}{}\section{includes/encoding\+\_\+graph.h File Reference}
+\label{encoding__graph_8h}\index{includes/encoding\+\_\+graph.\+h@{includes/encoding\+\_\+graph.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+Include dependency graph for encoding\+\_\+graph.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{encoding__graph_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structLeaf__nums}{Leaf\+\_\+nums}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{encoding__graph_8h_a1c6d55f1fa15645ed8c12306abef58c3}{encoding\+\_\+graph} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t, F\+I\+LE $\ast$file, int current\+\_\+node, int node\+\_\+total)
+\begin{DoxyCompactList}\small\item\em Encode a minimized quadtree (in color) \end{DoxyCompactList}\item 
+int \hyperlink{encoding__graph_8h_aa4e667e49c732e5ac4047568bd943867}{encoding\+\_\+graph\+\_\+bw} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t, F\+I\+LE $\ast$file, int current\+\_\+node, int node\+\_\+total)
+\begin{DoxyCompactList}\small\item\em Encode a minimized quadtree (in black \& white) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{encoding__graph_8h_a1c6d55f1fa15645ed8c12306abef58c3}\label{encoding__graph_8h_a1c6d55f1fa15645ed8c12306abef58c3}} 
+\index{encoding\+\_\+graph.\+h@{encoding\+\_\+graph.\+h}!encoding\+\_\+graph@{encoding\+\_\+graph}}
+\index{encoding\+\_\+graph@{encoding\+\_\+graph}!encoding\+\_\+graph.\+h@{encoding\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{encoding\+\_\+graph()}{encoding\_graph()}}
+{\footnotesize\ttfamily int encoding\+\_\+graph (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t,  }\item[{F\+I\+LE $\ast$}]{file,  }\item[{int}]{current\+\_\+node,  }\item[{int}]{node\+\_\+total }\end{DoxyParamCaption})}
+
+
+
+Encode a minimized quadtree (in color) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are encoding \\
+\hline
+{\em file} & The file we are using the encode t \\
+\hline
+{\em current\+\_\+node} & The number of the node we are encoding \\
+\hline
+{\em node\+\_\+total} & The number of node so far \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of node so far to actualize it (since it\textquotesingle{}s a recursive function) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{encoding__graph_8h_aa4e667e49c732e5ac4047568bd943867}\label{encoding__graph_8h_aa4e667e49c732e5ac4047568bd943867}} 
+\index{encoding\+\_\+graph.\+h@{encoding\+\_\+graph.\+h}!encoding\+\_\+graph\+\_\+bw@{encoding\+\_\+graph\+\_\+bw}}
+\index{encoding\+\_\+graph\+\_\+bw@{encoding\+\_\+graph\+\_\+bw}!encoding\+\_\+graph.\+h@{encoding\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{encoding\+\_\+graph\+\_\+bw()}{encoding\_graph\_bw()}}
+{\footnotesize\ttfamily int encoding\+\_\+graph\+\_\+bw (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t,  }\item[{F\+I\+LE $\ast$}]{file,  }\item[{int}]{current\+\_\+node,  }\item[{int}]{node\+\_\+total }\end{DoxyParamCaption})}
+
+
+
+Encode a minimized quadtree (in black \& white) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are encoding \\
+\hline
+{\em file} & The file we are using the encode t \\
+\hline
+{\em current\+\_\+node} & The number of the node we are encoding \\
+\hline
+{\em node\+\_\+total} & The number of node so far \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of node so far to actualize it (since it\textquotesingle{}s a recursive function) 
+\end{DoxyReturn}

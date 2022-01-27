@@ -1,0 +1,179 @@
+\hypertarget{color_8h}{}\section{includes/color.h File Reference}
+\label{color_8h}\index{includes/color.\+h@{includes/color.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}pixel.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}zone.\+h\char`\"{}}\newline
+Include dependency graph for color.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{color_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{color_8h_a9bcb77d5a0957570f2eda790bf9caa4f}{M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR}~20
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{color_8h_aba957ff783909eccd3e4ed1795275ba4}{kids\+\_\+same\+\_\+color} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$t)
+\begin{DoxyCompactList}\small\item\em Check if all t leaf have the same color. \end{DoxyCompactList}\item 
+int \hyperlink{color_8h_ae352fca155d17554692045bee0f1f7d5}{close\+\_\+color} (M\+L\+V\+\_\+\+Color c1, M\+L\+V\+\_\+\+Color c2)
+\begin{DoxyCompactList}\small\item\em Check if c1 and c2 have a close color. \end{DoxyCompactList}\item 
+double \hyperlink{color_8h_ad1098571331055e832a1f6e547e14234}{color\+\_\+distance} (M\+L\+V\+\_\+\+Color c1, M\+L\+V\+\_\+\+Color c2)
+\begin{DoxyCompactList}\small\item\em Calculates distance between 2 M\+L\+V\+\_\+\+Color. \end{DoxyCompactList}\item 
+double \hyperlink{color_8h_ababfb6f80a6fbacb64bd92c40630f23a}{zone\+\_\+color\+\_\+error} (M\+L\+V\+\_\+\+Color zone\+\_\+color, const M\+L\+V\+\_\+\+Image $\ast$image, \hyperlink{structZone}{Zone} zone)
+\begin{DoxyCompactList}\small\item\em Returns the error of a zone (= rectangle of top left corner (x1, y1), and bottom right corner (x2, y2)) \end{DoxyCompactList}\item 
+M\+L\+V\+\_\+\+Color \hyperlink{color_8h_a73b7f54f2629977e1c67caaa2d843e17}{zone\+\_\+average\+\_\+color} (const M\+L\+V\+\_\+\+Image $\ast$image, \hyperlink{structZone}{Zone} zone)
+\begin{DoxyCompactList}\small\item\em Returns the average color of a zone (= rectangle of top left corner (x1, y1) and bottom right corner (x2, y2)) \end{DoxyCompactList}\item 
+void \hyperlink{color_8h_a997d12f58e17dcb91c80954899cb2943}{get\+\_\+zones\+\_\+average\+\_\+color} (const M\+L\+V\+\_\+\+Image $\ast$image, \hyperlink{structZone}{Zone} zone, M\+L\+V\+\_\+\+Color $\ast$no, M\+L\+V\+\_\+\+Color $\ast$ne, M\+L\+V\+\_\+\+Color $\ast$so, M\+L\+V\+\_\+\+Color $\ast$se)
+\begin{DoxyCompactList}\small\item\em Subdivise a zone to get all its zones (NO, NE, SE, SO) average color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{color_8h_a9bcb77d5a0957570f2eda790bf9caa4f}\label{color_8h_a9bcb77d5a0957570f2eda790bf9caa4f}} 
+\index{color.\+h@{color.\+h}!M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR@{M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR}}
+\index{M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR@{M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR}{MAX\_DIST\_COLOR}}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR~20}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{color_8h_ae352fca155d17554692045bee0f1f7d5}\label{color_8h_ae352fca155d17554692045bee0f1f7d5}} 
+\index{color.\+h@{color.\+h}!close\+\_\+color@{close\+\_\+color}}
+\index{close\+\_\+color@{close\+\_\+color}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{close\+\_\+color()}{close\_color()}}
+{\footnotesize\ttfamily int close\+\_\+color (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{c1,  }\item[{M\+L\+V\+\_\+\+Color}]{c2 }\end{DoxyParamCaption})}
+
+
+
+Check if c1 and c2 have a close color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & The first M\+L\+V\+\_\+\+Color \\
+\hline
+{\em c2} & The second M\+L\+V\+\_\+\+Color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if c1 an c2 r, g, b values are close enough, maximum of M\+A\+X\+\_\+\+D\+I\+S\+T\+\_\+\+C\+O\+L\+OR 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{color_8h_ad1098571331055e832a1f6e547e14234}\label{color_8h_ad1098571331055e832a1f6e547e14234}} 
+\index{color.\+h@{color.\+h}!color\+\_\+distance@{color\+\_\+distance}}
+\index{color\+\_\+distance@{color\+\_\+distance}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{color\+\_\+distance()}{color\_distance()}}
+{\footnotesize\ttfamily double color\+\_\+distance (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{c1,  }\item[{M\+L\+V\+\_\+\+Color}]{c2 }\end{DoxyParamCaption})}
+
+
+
+Calculates distance between 2 M\+L\+V\+\_\+\+Color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1} & The first M\+L\+V\+\_\+\+Color \\
+\hline
+{\em c2} & The second M\+L\+V\+\_\+\+Color \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between both colors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{color_8h_a997d12f58e17dcb91c80954899cb2943}\label{color_8h_a997d12f58e17dcb91c80954899cb2943}} 
+\index{color.\+h@{color.\+h}!get\+\_\+zones\+\_\+average\+\_\+color@{get\+\_\+zones\+\_\+average\+\_\+color}}
+\index{get\+\_\+zones\+\_\+average\+\_\+color@{get\+\_\+zones\+\_\+average\+\_\+color}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{get\+\_\+zones\+\_\+average\+\_\+color()}{get\_zones\_average\_color()}}
+{\footnotesize\ttfamily void get\+\_\+zones\+\_\+average\+\_\+color (\begin{DoxyParamCaption}\item[{const M\+L\+V\+\_\+\+Image $\ast$}]{image,  }\item[{\hyperlink{structZone}{Zone}}]{zone,  }\item[{M\+L\+V\+\_\+\+Color $\ast$}]{no,  }\item[{M\+L\+V\+\_\+\+Color $\ast$}]{ne,  }\item[{M\+L\+V\+\_\+\+Color $\ast$}]{so,  }\item[{M\+L\+V\+\_\+\+Color $\ast$}]{se }\end{DoxyParamCaption})}
+
+
+
+Subdivise a zone to get all its zones (NO, NE, SE, SO) average color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image we\textquotesingle{}ll calculate each zone\textquotesingle{}s average color \\
+\hline
+{\em zone} & The zone we are subdivising \\
+\hline
+{\em no} & NO zone of parameter \char`\"{}zone\char`\"{} \\
+\hline
+{\em ne} & NE zone of parameter \char`\"{}zone\char`\"{} \\
+\hline
+{\em so} & SO zone of parameter \char`\"{}zone\char`\"{} \\
+\hline
+{\em se} & SE zone of parameter \char`\"{}zone\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{color_8h_aba957ff783909eccd3e4ed1795275ba4}\label{color_8h_aba957ff783909eccd3e4ed1795275ba4}} 
+\index{color.\+h@{color.\+h}!kids\+\_\+same\+\_\+color@{kids\+\_\+same\+\_\+color}}
+\index{kids\+\_\+same\+\_\+color@{kids\+\_\+same\+\_\+color}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{kids\+\_\+same\+\_\+color()}{kids\_same\_color()}}
+{\footnotesize\ttfamily int kids\+\_\+same\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Check if all t leaf have the same color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are looking at \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if all its leaf have the same color 0 otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{color_8h_a73b7f54f2629977e1c67caaa2d843e17}\label{color_8h_a73b7f54f2629977e1c67caaa2d843e17}} 
+\index{color.\+h@{color.\+h}!zone\+\_\+average\+\_\+color@{zone\+\_\+average\+\_\+color}}
+\index{zone\+\_\+average\+\_\+color@{zone\+\_\+average\+\_\+color}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{zone\+\_\+average\+\_\+color()}{zone\_average\_color()}}
+{\footnotesize\ttfamily M\+L\+V\+\_\+\+Color zone\+\_\+average\+\_\+color (\begin{DoxyParamCaption}\item[{const M\+L\+V\+\_\+\+Image $\ast$}]{image,  }\item[{\hyperlink{structZone}{Zone}}]{zone }\end{DoxyParamCaption})}
+
+
+
+Returns the average color of a zone (= rectangle of top left corner (x1, y1) and bottom right corner (x2, y2)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image} & The image we are calculating the error from \\
+\hline
+{\em zone} & The zone we are calculating the error from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The M\+L\+V\+\_\+\+Color of the zone 
+\end{DoxyReturn}
+\mbox{\Hypertarget{color_8h_ababfb6f80a6fbacb64bd92c40630f23a}\label{color_8h_ababfb6f80a6fbacb64bd92c40630f23a}} 
+\index{color.\+h@{color.\+h}!zone\+\_\+color\+\_\+error@{zone\+\_\+color\+\_\+error}}
+\index{zone\+\_\+color\+\_\+error@{zone\+\_\+color\+\_\+error}!color.\+h@{color.\+h}}
+\subsubsection{\texorpdfstring{zone\+\_\+color\+\_\+error()}{zone\_color\_error()}}
+{\footnotesize\ttfamily double zone\+\_\+color\+\_\+error (\begin{DoxyParamCaption}\item[{M\+L\+V\+\_\+\+Color}]{zone\+\_\+color,  }\item[{const M\+L\+V\+\_\+\+Image $\ast$}]{image,  }\item[{\hyperlink{structZone}{Zone}}]{zone }\end{DoxyParamCaption})}
+
+
+
+Returns the error of a zone (= rectangle of top left corner (x1, y1), and bottom right corner (x2, y2)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em zone\+\_\+color} & \hyperlink{structZone}{Zone}\textquotesingle{}s color \\
+\hline
+{\em image} & The image we are calculating the error from \\
+\hline
+{\em zone} & The zone we are calculating the error from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The error from the zone 
+\end{DoxyReturn}

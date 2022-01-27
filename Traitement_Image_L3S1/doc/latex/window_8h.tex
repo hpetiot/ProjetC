@@ -1,0 +1,135 @@
+\hypertarget{window_8h}{}\section{includes/window.h File Reference}
+\label{window_8h}\index{includes/window.\+h@{includes/window.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+image.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+Include dependency graph for window.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{window_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{window_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structWin}{Win}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{window_8h_a07c883b063ae8a373a3c9b5356f5fa8d}{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}~512
+\item 
+\#define \hyperlink{window_8h_a697478ff051a58c25679decfec6480af}{B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}~= M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{window_8h_aff2959875cb29ac85a62acd8c751074b}{init\+\_\+window\+\_\+informations} (\hyperlink{structWin}{Win} $\ast$info)
+\begin{DoxyCompactList}\small\item\em This function initialise all variales needed for future handling of window informations. \end{DoxyCompactList}\item 
+int \hyperlink{window_8h_a58d67052c9050874b7e97f30e67fa4d5}{place\+\_\+element\+\_\+in\+\_\+window} (\hyperlink{structWin}{Win} $\ast$info)
+\begin{DoxyCompactList}\small\item\em This function places all buttons in the window and intialises them their base apearence. \end{DoxyCompactList}\item 
+void \hyperlink{window_8h_a189a1e112375436240698f1744e47058}{display\+\_\+base\+\_\+window} (\hyperlink{structWin}{Win} $\ast$info)
+\begin{DoxyCompactList}\small\item\em This function displays all elements in the window. \end{DoxyCompactList}\item 
+int \hyperlink{window_8h_ae450a64f34975275e0ac426f0b38b97e}{update\+\_\+event} (\hyperlink{structWin}{Win} $\ast$info, \hyperlink{structMouse}{Mouse} $\ast$mouse)
+\begin{DoxyCompactList}\small\item\em This function goes throught the liste of recent events and updated the window buttons accordingly using \textquotesingle{}button\+\_\+update\textquotesingle{} (button.\+c). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{window_8h_a697478ff051a58c25679decfec6480af}\label{window_8h_a697478ff051a58c25679decfec6480af}} 
+\index{window.\+h@{window.\+h}!B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR@{B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}}
+\index{B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR@{B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}{BCK\_GROUND\_COLOR}}
+{\footnotesize\ttfamily \#define B\+C\+K\+\_\+\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR~= M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK}
+
+\mbox{\Hypertarget{window_8h_a07c883b063ae8a373a3c9b5356f5fa8d}\label{window_8h_a07c883b063ae8a373a3c9b5356f5fa8d}} 
+\index{window.\+h@{window.\+h}!S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE@{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}}
+\index{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE@{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE}{SIZE\_IMAGE}}
+{\footnotesize\ttfamily \#define S\+I\+Z\+E\+\_\+\+I\+M\+A\+GE~512}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{window_8h_a189a1e112375436240698f1744e47058}\label{window_8h_a189a1e112375436240698f1744e47058}} 
+\index{window.\+h@{window.\+h}!display\+\_\+base\+\_\+window@{display\+\_\+base\+\_\+window}}
+\index{display\+\_\+base\+\_\+window@{display\+\_\+base\+\_\+window}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{display\+\_\+base\+\_\+window()}{display\_base\_window()}}
+{\footnotesize\ttfamily void display\+\_\+base\+\_\+window (\begin{DoxyParamCaption}\item[{\hyperlink{structWin}{Win} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+This function displays all elements in the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & a pointer on the structure holding all window-\/relevent infromation. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8h_aff2959875cb29ac85a62acd8c751074b}\label{window_8h_aff2959875cb29ac85a62acd8c751074b}} 
+\index{window.\+h@{window.\+h}!init\+\_\+window\+\_\+informations@{init\+\_\+window\+\_\+informations}}
+\index{init\+\_\+window\+\_\+informations@{init\+\_\+window\+\_\+informations}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+window\+\_\+informations()}{init\_window\_informations()}}
+{\footnotesize\ttfamily void init\+\_\+window\+\_\+informations (\begin{DoxyParamCaption}\item[{\hyperlink{structWin}{Win} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+This function initialise all variales needed for future handling of window informations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & a pointer on the structue holding all the information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8h_a58d67052c9050874b7e97f30e67fa4d5}\label{window_8h_a58d67052c9050874b7e97f30e67fa4d5}} 
+\index{window.\+h@{window.\+h}!place\+\_\+element\+\_\+in\+\_\+window@{place\+\_\+element\+\_\+in\+\_\+window}}
+\index{place\+\_\+element\+\_\+in\+\_\+window@{place\+\_\+element\+\_\+in\+\_\+window}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{place\+\_\+element\+\_\+in\+\_\+window()}{place\_element\_in\_window()}}
+{\footnotesize\ttfamily int place\+\_\+element\+\_\+in\+\_\+window (\begin{DoxyParamCaption}\item[{\hyperlink{structWin}{Win} $\ast$}]{info }\end{DoxyParamCaption})}
+
+
+
+This function places all buttons in the window and intialises them their base apearence. 
+
+It allocates memory on the \textquotesingle{}button\+\_\+array\textquotesingle{} field and updates \textquotesingle{}nb\+\_\+button\textquotesingle{} accordingly. 
+\begin{DoxyParams}{Parameters}
+{\em info} & a pointer on the structure holding all window information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0\+: Memory allocation error. 1\+: All good. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{window_8h_ae450a64f34975275e0ac426f0b38b97e}\label{window_8h_ae450a64f34975275e0ac426f0b38b97e}} 
+\index{window.\+h@{window.\+h}!update\+\_\+event@{update\+\_\+event}}
+\index{update\+\_\+event@{update\+\_\+event}!window.\+h@{window.\+h}}
+\subsubsection{\texorpdfstring{update\+\_\+event()}{update\_event()}}
+{\footnotesize\ttfamily int update\+\_\+event (\begin{DoxyParamCaption}\item[{\hyperlink{structWin}{Win} $\ast$}]{info,  }\item[{\hyperlink{structMouse}{Mouse} $\ast$}]{mouse }\end{DoxyParamCaption})}
+
+
+
+This function goes throught the liste of recent events and updated the window buttons accordingly using \textquotesingle{}button\+\_\+update\textquotesingle{} (button.\+c). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & a pointer on the structure holding all window information. \\
+\hline
+{\em mouse} & -\/$>$ a pointer on a structure to store all mouse relvent informations. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+info.\+nb\+\_\+button -\/$>$ no event affecting the window buttons found. \mbox{[}0; nb\+\_\+button\mbox{[} -\/$>$ the numbre in the button\+\_\+array field of info corresponding to the affected button. 
+\end{DoxyReturn}

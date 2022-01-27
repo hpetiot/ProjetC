@@ -1,0 +1,91 @@
+\hypertarget{decoding_8h}{}\section{includes/decoding.h File Reference}
+\label{decoding_8h}\index{includes/decoding.\+h@{includes/decoding.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}bit\+\_\+buffer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+Include dependency graph for decoding.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{decoding_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=212pt]{decoding_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{decoding_8h_ad9f760fae273a7a242bf2fc78d6dc5e8}{new\+\_\+node\+\_\+decoding} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$node)
+\begin{DoxyCompactList}\small\item\em Allocate a tree with its type == N\+O\+DE, and without calculating any of its field (color\+\_\+error or subtree (color/leafs)) \end{DoxyCompactList}\item 
+int \hyperlink{decoding_8h_a86c16c72de4c33bf0dbf49cd72e2131b}{new\+\_\+leaf\+\_\+decoding} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$leaf)
+\begin{DoxyCompactList}\small\item\em Allocate a tree with its type == L\+E\+AF, and without calculating any of its field (color\+\_\+error or subtree (color/leafs)) \end{DoxyCompactList}\item 
+int \hyperlink{decoding_8h_afdd371506a08147d6c1c8f4393c206ee}{decode\+\_\+tree} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, F\+I\+LE $\ast$file, int colored\+\_\+version)
+\begin{DoxyCompactList}\small\item\em Read an encoded file (.qtc or .qtn) to fill a quadtree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{decoding_8h_afdd371506a08147d6c1c8f4393c206ee}\label{decoding_8h_afdd371506a08147d6c1c8f4393c206ee}} 
+\index{decoding.\+h@{decoding.\+h}!decode\+\_\+tree@{decode\+\_\+tree}}
+\index{decode\+\_\+tree@{decode\+\_\+tree}!decoding.\+h@{decoding.\+h}}
+\subsubsection{\texorpdfstring{decode\+\_\+tree()}{decode\_tree()}}
+{\footnotesize\ttfamily int decode\+\_\+tree (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{F\+I\+LE $\ast$}]{file,  }\item[{int}]{colored\+\_\+version }\end{DoxyParamCaption})}
+
+
+
+Read an encoded file (.qtc or .qtn) to fill a quadtree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are filling \\
+\hline
+{\em file} & The file we are decoding \\
+\hline
+{\em colored\+\_\+version} & Whether we decode a tree in color or in B\&W (resp. 1 or 0) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/4 If we couldn\textquotesingle{}t decode a color -\/3 If we coudn\textquotesingle{}t allocate a leaf -\/2 If we coudn\textquotesingle{}t allocate a node -\/1 If we coudn\textquotesingle{}t know wheter next tree will be a node or a leaf (file not correctly writed) 0 if we could decode file 
+\end{DoxyReturn}
+\mbox{\Hypertarget{decoding_8h_a86c16c72de4c33bf0dbf49cd72e2131b}\label{decoding_8h_a86c16c72de4c33bf0dbf49cd72e2131b}} 
+\index{decoding.\+h@{decoding.\+h}!new\+\_\+leaf\+\_\+decoding@{new\+\_\+leaf\+\_\+decoding}}
+\index{new\+\_\+leaf\+\_\+decoding@{new\+\_\+leaf\+\_\+decoding}!decoding.\+h@{decoding.\+h}}
+\subsubsection{\texorpdfstring{new\+\_\+leaf\+\_\+decoding()}{new\_leaf\_decoding()}}
+{\footnotesize\ttfamily int new\+\_\+leaf\+\_\+decoding (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{leaf }\end{DoxyParamCaption})}
+
+
+
+Allocate a tree with its type == L\+E\+AF, and without calculating any of its field (color\+\_\+error or subtree (color/leafs)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The tree we are allocating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if we couldn\textquotesingle{}t allocate the tree -\/2 if we couldn\textquotesingle{}t allocate tree\textquotesingle{}s subtree 1 if we allocate the tree without any problem 
+\end{DoxyReturn}
+\mbox{\Hypertarget{decoding_8h_ad9f760fae273a7a242bf2fc78d6dc5e8}\label{decoding_8h_ad9f760fae273a7a242bf2fc78d6dc5e8}} 
+\index{decoding.\+h@{decoding.\+h}!new\+\_\+node\+\_\+decoding@{new\+\_\+node\+\_\+decoding}}
+\index{new\+\_\+node\+\_\+decoding@{new\+\_\+node\+\_\+decoding}!decoding.\+h@{decoding.\+h}}
+\subsubsection{\texorpdfstring{new\+\_\+node\+\_\+decoding()}{new\_node\_decoding()}}
+{\footnotesize\ttfamily int new\+\_\+node\+\_\+decoding (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{node }\end{DoxyParamCaption})}
+
+
+
+Allocate a tree with its type == N\+O\+DE, and without calculating any of its field (color\+\_\+error or subtree (color/leafs)) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & The tree we are allocating \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/1 if we couldn\textquotesingle{}t allocate the tree -\/2 if we couldn\textquotesingle{}t allocate tree\textquotesingle{}s subtree 1 if we allocate the tree without any problem 
+\end{DoxyReturn}

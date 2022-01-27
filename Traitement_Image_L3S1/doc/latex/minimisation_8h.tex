@@ -1,0 +1,79 @@
+\hypertarget{minimisation_8h}{}\section{includes/minimisation.h File Reference}
+\label{minimisation_8h}\index{includes/minimisation.\+h@{includes/minimisation.\+h}}
+{\ttfamily \#include \char`\"{}color.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}zone.\+h\char`\"{}}\newline
+Include dependency graph for minimisation.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{minimisation_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{minimisation_8h_ad1f7f78b7e7843ca8a2f94fcc8482ceb}{D\+I\+S\+T\+\_\+\+M\+AX}~7.\+5
+\item 
+\#define \hyperlink{minimisation_8h_af858ce84831caa5b5daaf9d9776ca547}{E\+R\+R\+O\+R\+\_\+\+M\+AX}~100.\+0
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{minimisation_8h_aef0439c213cf617f1f2559f6cd6a425e}{minimize\+\_\+without\+\_\+loss} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t)
+\begin{DoxyCompactList}\small\item\em Minimize a tree without loss \+: if a node with a heigh of 1 still have all of its leaf with the same color, we replace the leaf with one of its leaf. \end{DoxyCompactList}\item 
+void \hyperlink{minimisation_8h_a123478c12f569d3e6276af27e0ad2310}{minimize\+\_\+loss} (\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, const M\+L\+V\+\_\+\+Image $\ast$image, \hyperlink{structZone}{Zone} zone)
+\begin{DoxyCompactList}\small\item\em Minimize a tree with loss \+: minimize a quadtree using both minimize\+\_\+loss\+\_\+remove\+\_\+small\+\_\+errors and minimize\+\_\+loss\+\_\+fuse\+\_\+identical\+\_\+subtree functions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{minimisation_8h_ad1f7f78b7e7843ca8a2f94fcc8482ceb}\label{minimisation_8h_ad1f7f78b7e7843ca8a2f94fcc8482ceb}} 
+\index{minimisation.\+h@{minimisation.\+h}!D\+I\+S\+T\+\_\+\+M\+AX@{D\+I\+S\+T\+\_\+\+M\+AX}}
+\index{D\+I\+S\+T\+\_\+\+M\+AX@{D\+I\+S\+T\+\_\+\+M\+AX}!minimisation.\+h@{minimisation.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+S\+T\+\_\+\+M\+AX}{DIST\_MAX}}
+{\footnotesize\ttfamily \#define D\+I\+S\+T\+\_\+\+M\+AX~7.\+5}
+
+\mbox{\Hypertarget{minimisation_8h_af858ce84831caa5b5daaf9d9776ca547}\label{minimisation_8h_af858ce84831caa5b5daaf9d9776ca547}} 
+\index{minimisation.\+h@{minimisation.\+h}!E\+R\+R\+O\+R\+\_\+\+M\+AX@{E\+R\+R\+O\+R\+\_\+\+M\+AX}}
+\index{E\+R\+R\+O\+R\+\_\+\+M\+AX@{E\+R\+R\+O\+R\+\_\+\+M\+AX}!minimisation.\+h@{minimisation.\+h}}
+\subsubsection{\texorpdfstring{E\+R\+R\+O\+R\+\_\+\+M\+AX}{ERROR\_MAX}}
+{\footnotesize\ttfamily \#define E\+R\+R\+O\+R\+\_\+\+M\+AX~100.\+0}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{minimisation_8h_a123478c12f569d3e6276af27e0ad2310}\label{minimisation_8h_a123478c12f569d3e6276af27e0ad2310}} 
+\index{minimisation.\+h@{minimisation.\+h}!minimize\+\_\+loss@{minimize\+\_\+loss}}
+\index{minimize\+\_\+loss@{minimize\+\_\+loss}!minimisation.\+h@{minimisation.\+h}}
+\subsubsection{\texorpdfstring{minimize\+\_\+loss()}{minimize\_loss()}}
+{\footnotesize\ttfamily void minimize\+\_\+loss (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{const M\+L\+V\+\_\+\+Image $\ast$}]{image,  }\item[{\hyperlink{structZone}{Zone}}]{zone }\end{DoxyParamCaption})}
+
+
+
+Minimize a tree with loss \+: minimize a quadtree using both minimize\+\_\+loss\+\_\+remove\+\_\+small\+\_\+errors and minimize\+\_\+loss\+\_\+fuse\+\_\+identical\+\_\+subtree functions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are minimizing \\
+\hline
+{\em image} & The image the tree is created from \\
+\hline
+{\em zone} & The zone we are minimizing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{minimisation_8h_aef0439c213cf617f1f2559f6cd6a425e}\label{minimisation_8h_aef0439c213cf617f1f2559f6cd6a425e}} 
+\index{minimisation.\+h@{minimisation.\+h}!minimize\+\_\+without\+\_\+loss@{minimize\+\_\+without\+\_\+loss}}
+\index{minimize\+\_\+without\+\_\+loss@{minimize\+\_\+without\+\_\+loss}!minimisation.\+h@{minimisation.\+h}}
+\subsubsection{\texorpdfstring{minimize\+\_\+without\+\_\+loss()}{minimize\_without\_loss()}}
+{\footnotesize\ttfamily void minimize\+\_\+without\+\_\+loss (\begin{DoxyParamCaption}\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t }\end{DoxyParamCaption})}
+
+
+
+Minimize a tree without loss \+: if a node with a heigh of 1 still have all of its leaf with the same color, we replace the leaf with one of its leaf. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The tree we are minimizing \\
+\hline
+\end{DoxyParams}

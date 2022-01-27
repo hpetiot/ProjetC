@@ -1,0 +1,131 @@
+\hypertarget{bit__buffer_8h}{}\section{includes/bit\+\_\+buffer.h File Reference}
+\label{bit__buffer_8h}\index{includes/bit\+\_\+buffer.\+h@{includes/bit\+\_\+buffer.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+Include dependency graph for bit\+\_\+buffer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{bit__buffer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{bit__buffer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structBit__buffer}{Bit\+\_\+buffer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{bit__buffer_8h_aa7dba68df08c09b3e7aa209e01afcc79}{init\+\_\+bit\+\_\+buffer} (\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$bit\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Initialize a bit\+\_\+buffer. \end{DoxyCompactList}\item 
+void \hyperlink{bit__buffer_8h_acfe8e739139f45be71bf672b64c8e208}{padding\+\_\+last\+\_\+oct} (\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$bit\+\_\+buffer, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Add \textquotesingle{}0\textquotesingle{} to bit\+\_\+buffer in order to complete the byte. \end{DoxyCompactList}\item 
+void \hyperlink{bit__buffer_8h_acce7d6528363885bf2bf46f6ec3f0e6e}{write\+\_\+bit} (\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$bit\+\_\+buffer, int val, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Fill a bit\+\_\+buffer depending of the value of \char`\"{}val\char`\"{} If val != 0, add 1 to bit\+\_\+buffer If val == 0, add 0 to bit\+\_\+buffer. \end{DoxyCompactList}\item 
+void \hyperlink{bit__buffer_8h_a1ddbad580747e02386339bd894d725a7}{write\+\_\+bit\+\_\+color} (\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$bit\+\_\+buffer, unsigned char color, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Convert color into a byte, and write it in file. \end{DoxyCompactList}\item 
+int \hyperlink{bit__buffer_8h_a53ef7e8afa087bcb6769530974f3dada}{read\+\_\+bit} (\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$bit\+\_\+buffer, F\+I\+LE $\ast$file)
+\begin{DoxyCompactList}\small\item\em Read the current bit in bit\+\_\+buffer If we have read all the bit, fgetc in order to get the file next byte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{bit__buffer_8h_aa7dba68df08c09b3e7aa209e01afcc79}\label{bit__buffer_8h_aa7dba68df08c09b3e7aa209e01afcc79}} 
+\index{bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}!init\+\_\+bit\+\_\+buffer@{init\+\_\+bit\+\_\+buffer}}
+\index{init\+\_\+bit\+\_\+buffer@{init\+\_\+bit\+\_\+buffer}!bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}}
+\subsubsection{\texorpdfstring{init\+\_\+bit\+\_\+buffer()}{init\_bit\_buffer()}}
+{\footnotesize\ttfamily void init\+\_\+bit\+\_\+buffer (\begin{DoxyParamCaption}\item[{\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$}]{bit\+\_\+buffer }\end{DoxyParamCaption})}
+
+
+
+Initialize a bit\+\_\+buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+buffer} & The bit\+\_\+buffer we are initializing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bit__buffer_8h_acfe8e739139f45be71bf672b64c8e208}\label{bit__buffer_8h_acfe8e739139f45be71bf672b64c8e208}} 
+\index{bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}!padding\+\_\+last\+\_\+oct@{padding\+\_\+last\+\_\+oct}}
+\index{padding\+\_\+last\+\_\+oct@{padding\+\_\+last\+\_\+oct}!bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}}
+\subsubsection{\texorpdfstring{padding\+\_\+last\+\_\+oct()}{padding\_last\_oct()}}
+{\footnotesize\ttfamily void padding\+\_\+last\+\_\+oct (\begin{DoxyParamCaption}\item[{\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$}]{bit\+\_\+buffer,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Add \textquotesingle{}0\textquotesingle{} to bit\+\_\+buffer in order to complete the byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+buffer} & The bit\+\_\+buffer we are \char`\"{}padding\char`\"{} \\
+\hline
+{\em file} & The file we are writing in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bit__buffer_8h_a53ef7e8afa087bcb6769530974f3dada}\label{bit__buffer_8h_a53ef7e8afa087bcb6769530974f3dada}} 
+\index{bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}!read\+\_\+bit@{read\+\_\+bit}}
+\index{read\+\_\+bit@{read\+\_\+bit}!bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}}
+\subsubsection{\texorpdfstring{read\+\_\+bit()}{read\_bit()}}
+{\footnotesize\ttfamily int read\+\_\+bit (\begin{DoxyParamCaption}\item[{\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$}]{bit\+\_\+buffer,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Read the current bit in bit\+\_\+buffer If we have read all the bit, fgetc in order to get the file next byte. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+buffer} & The bit\+\_\+buffer we get the byte from, and read from \\
+\hline
+{\em file} & The file we are reading \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Current value of bit\+\_\+buffer (0 or 1) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{bit__buffer_8h_acce7d6528363885bf2bf46f6ec3f0e6e}\label{bit__buffer_8h_acce7d6528363885bf2bf46f6ec3f0e6e}} 
+\index{bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}!write\+\_\+bit@{write\+\_\+bit}}
+\index{write\+\_\+bit@{write\+\_\+bit}!bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}}
+\subsubsection{\texorpdfstring{write\+\_\+bit()}{write\_bit()}}
+{\footnotesize\ttfamily void write\+\_\+bit (\begin{DoxyParamCaption}\item[{\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$}]{bit\+\_\+buffer,  }\item[{int}]{val,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Fill a bit\+\_\+buffer depending of the value of \char`\"{}val\char`\"{} If val != 0, add 1 to bit\+\_\+buffer If val == 0, add 0 to bit\+\_\+buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+buffer} & The bit\+\_\+buffer we are filling \\
+\hline
+{\em val} & The value \\
+\hline
+{\em file} & The file we are writing in if bit\+\_\+buffer is full (byte completed) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{bit__buffer_8h_a1ddbad580747e02386339bd894d725a7}\label{bit__buffer_8h_a1ddbad580747e02386339bd894d725a7}} 
+\index{bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}!write\+\_\+bit\+\_\+color@{write\+\_\+bit\+\_\+color}}
+\index{write\+\_\+bit\+\_\+color@{write\+\_\+bit\+\_\+color}!bit\+\_\+buffer.\+h@{bit\+\_\+buffer.\+h}}
+\subsubsection{\texorpdfstring{write\+\_\+bit\+\_\+color()}{write\_bit\_color()}}
+{\footnotesize\ttfamily void write\+\_\+bit\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{structBit__buffer}{Bit\+\_\+buffer} $\ast$}]{bit\+\_\+buffer,  }\item[{unsigned char}]{color,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+
+
+Convert color into a byte, and write it in file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bit\+\_\+buffer} & The bit\+\_\+buffer we are filling in order to write color in the file \\
+\hline
+{\em color} & The color we want to add in file \\
+\hline
+{\em file} & The file we are writing the color in \\
+\hline
+\end{DoxyParams}

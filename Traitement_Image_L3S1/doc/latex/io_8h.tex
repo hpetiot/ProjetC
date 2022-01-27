@@ -1,0 +1,365 @@
+\hypertarget{io_8h}{}\section{includes/io.h File Reference}
+\label{io_8h}\index{includes/io.\+h@{includes/io.\+h}}
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}list\+\_\+errors.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}window.\+h\char`\"{}}\newline
+Include dependency graph for io.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{io_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{io_8h_a9cc8659863c4248476caec5457ce3f3b}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+1}~\char`\"{}open image\char`\"{}
+\item 
+\#define \hyperlink{io_8h_a066330c13795fda64550f995d091129b}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+2}~\char`\"{}quadtree approximation\char`\"{}
+\item 
+\#define \hyperlink{io_8h_ac32a77b38fe1dc7a0e8ba15189f1a46a}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+3}~\char`\"{}save rgba bianary\char`\"{}
+\item 
+\#define \hyperlink{io_8h_ab067263c99b0fffb72a15f7492451bda}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+4}~\char`\"{}save b\&w binary\char`\"{}
+\item 
+\#define \hyperlink{io_8h_a3aa77fd4d081ceeb31fc038014157bc9}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+5}~\char`\"{}minimisation with loss\char`\"{}
+\item 
+\#define \hyperlink{io_8h_a7d1d4d075486ed42bcf0dc4d4f762d17}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+6}~\char`\"{}minimisation no loss\char`\"{}
+\item 
+\#define \hyperlink{io_8h_a3f1fa493a3bbfe6089813915a123387d}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+7}~\char`\"{}save rgba graf\char`\"{}
+\item 
+\#define \hyperlink{io_8h_ac942e285d89c48ca7fae7aa30a4ec77c}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+8}~\char`\"{}save b\&w graf\char`\"{}
+\item 
+\#define \hyperlink{io_8h_a5b8dd850afd22b935090b014c0a689f7}{B\+T\+N\+\_\+\+T\+X\+T\+\_\+9}~\char`\"{}quit\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion} \{ \newline
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9a7e07130e0bea13162408021d61994021}{N\+O\+PE}, 
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9a5a381b4eb702558ca3a9649c4e688793}{G\+R\+A\+P\+H\+\_\+\+BW}, 
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9af42331660d769fa0d6d73f153ddea9c5}{G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}, 
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9af0a4fadc79e905023dde32154a19818c}{Q\+U\+A\+D\+\_\+\+BW}, 
+\newline
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9af9b1d6f5461b858c009e41e49af50507}{Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}, 
+\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9a690e276cddb6f613322ac8bbc9ae967a}{S\+T\+D\+\_\+\+I\+M\+A\+GE}
+ \}
+\item 
+enum \hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9d}{Button\+\_\+fct} \{ \newline
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9daa4cec4073c0ed7580030ea1847a5c1de}{O\+P\+E\+N\+\_\+\+I\+M\+A\+GE}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9daafc216f903382899676d177c546c1128}{Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9daae8f5377f4515c0353117febbcf24515}{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9da2db3e1881c0be00e2092e853546dd6e5}{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW}, 
+\newline
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9da7f1dbab2951cb886e4eb7fcc0f99a053}{M\+I\+N\+I\+M\+\_\+\+L\+O\+SS}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9da64dec93d612b579b84194027f43fd875}{M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9daf1f539aa9d9c4a066f21e890fca44c56}{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}, 
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9da6459d5c19ab64b688ef2732faef80960}{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW}, 
+\newline
+\hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9da76bdc8adfd6c6463ab269ff4c06be9b4}{Q\+U\+IT}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{io_8h_a768fad8da091c5289e0176189e7aeec1}{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a .qtn was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_ab21fefacb448042f281751022e551f6d}{set\+\_\+button\+\_\+state\+\_\+no\+\_\+image} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a nothing was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a323b021e4079025caca68759aad876df}{set\+\_\+button\+\_\+state\+\_\+std\+\_\+image} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a standard image was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a4568e26282ca1e78c3527fa7a8fa954d}{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a .qtc was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a96531291223b210721944c57b22063e4}{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a .gmn was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a16736344637a9f05174ee7a35a67b1be}{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a .gmc was loaded. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a600dc79145181b397345c547320b5de2}{set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss} (\hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a quadtree was minimized without loss. \end{DoxyCompactList}\item 
+void \hyperlink{io_8h_a253eb0d5474572333c1be40a23c1ac22}{set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss} (\hyperlink{structButton}{Button} $\ast$array, \hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion} verssion)
+\begin{DoxyCompactList}\small\item\em This function changes the button state to fit the situation where a quadtree was minimized with loss. \end{DoxyCompactList}\item 
+int \hyperlink{io_8h_a670d56bcb04709b69a4ae94fb886dfd8}{link\+\_\+btn} (int btn\+\_\+number, \hyperlink{structWin}{Win} $\ast$info, \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$t, \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$color\+\_\+err\+\_\+list, \hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion} $\ast$verssion)
+\begin{DoxyCompactList}\small\item\em This function links the buttons to the functionalities they represents. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{io_8h_a9cc8659863c4248476caec5457ce3f3b}\label{io_8h_a9cc8659863c4248476caec5457ce3f3b}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+1@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+1}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+1@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+1}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+1}{BTN\_TXT\_1}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+1~\char`\"{}open image\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_a066330c13795fda64550f995d091129b}\label{io_8h_a066330c13795fda64550f995d091129b}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+2@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+2}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+2@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+2}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+2}{BTN\_TXT\_2}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+2~\char`\"{}quadtree approximation\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_ac32a77b38fe1dc7a0e8ba15189f1a46a}\label{io_8h_ac32a77b38fe1dc7a0e8ba15189f1a46a}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+3@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+3}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+3@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+3}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+3}{BTN\_TXT\_3}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+3~\char`\"{}save rgba bianary\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_ab067263c99b0fffb72a15f7492451bda}\label{io_8h_ab067263c99b0fffb72a15f7492451bda}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+4@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+4}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+4@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+4}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+4}{BTN\_TXT\_4}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+4~\char`\"{}save b\&w binary\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_a3aa77fd4d081ceeb31fc038014157bc9}\label{io_8h_a3aa77fd4d081ceeb31fc038014157bc9}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+5@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+5}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+5@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+5}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+5}{BTN\_TXT\_5}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+5~\char`\"{}minimisation with loss\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_a7d1d4d075486ed42bcf0dc4d4f762d17}\label{io_8h_a7d1d4d075486ed42bcf0dc4d4f762d17}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+6@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+6}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+6@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+6}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+6}{BTN\_TXT\_6}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+6~\char`\"{}minimisation no loss\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_a3f1fa493a3bbfe6089813915a123387d}\label{io_8h_a3f1fa493a3bbfe6089813915a123387d}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+7@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+7}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+7@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+7}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+7}{BTN\_TXT\_7}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+7~\char`\"{}save rgba graf\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_ac942e285d89c48ca7fae7aa30a4ec77c}\label{io_8h_ac942e285d89c48ca7fae7aa30a4ec77c}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+8@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+8}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+8@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+8}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+8}{BTN\_TXT\_8}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+8~\char`\"{}save b\&w graf\char`\"{}}
+
+\mbox{\Hypertarget{io_8h_a5b8dd850afd22b935090b014c0a689f7}\label{io_8h_a5b8dd850afd22b935090b014c0a689f7}} 
+\index{io.\+h@{io.\+h}!B\+T\+N\+\_\+\+T\+X\+T\+\_\+9@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+9}}
+\index{B\+T\+N\+\_\+\+T\+X\+T\+\_\+9@{B\+T\+N\+\_\+\+T\+X\+T\+\_\+9}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+X\+T\+\_\+9}{BTN\_TXT\_9}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+X\+T\+\_\+9~\char`\"{}quit\char`\"{}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9d}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9d}} 
+\index{io.\+h@{io.\+h}!Button\+\_\+fct@{Button\+\_\+fct}}
+\index{Button\+\_\+fct@{Button\+\_\+fct}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+fct}{Button\_fct}}
+{\footnotesize\ttfamily enum \hyperlink{io_8h_a369a6fddbb0e74817c96573ea88b9d9d}{Button\+\_\+fct}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{O\+P\+E\+N\+\_\+\+I\+M\+A\+GE@{O\+P\+E\+N\+\_\+\+I\+M\+A\+GE}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!O\+P\+E\+N\+\_\+\+I\+M\+A\+GE@{O\+P\+E\+N\+\_\+\+I\+M\+A\+GE}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9daa4cec4073c0ed7580030ea1847a5c1de}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9daa4cec4073c0ed7580030ea1847a5c1de}} 
+O\+P\+E\+N\+\_\+\+I\+M\+A\+GE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX@{Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX@{Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9daafc216f903382899676d177c546c1128}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9daafc216f903382899676d177c546c1128}} 
+Q\+U\+A\+D\+\_\+\+T\+R\+E\+E\+\_\+\+A\+P\+P\+R\+OX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR@{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR@{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9daae8f5377f4515c0353117febbcf24515}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9daae8f5377f4515c0353117febbcf24515}} 
+S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW@{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW@{S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9da2db3e1881c0be00e2092e853546dd6e5}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9da2db3e1881c0be00e2092e853546dd6e5}} 
+S\+A\+V\+E\+\_\+\+Q\+U\+A\+D\+\_\+\+BW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+I\+N\+I\+M\+\_\+\+L\+O\+SS@{M\+I\+N\+I\+M\+\_\+\+L\+O\+SS}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!M\+I\+N\+I\+M\+\_\+\+L\+O\+SS@{M\+I\+N\+I\+M\+\_\+\+L\+O\+SS}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9da7f1dbab2951cb886e4eb7fcc0f99a053}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9da7f1dbab2951cb886e4eb7fcc0f99a053}} 
+M\+I\+N\+I\+M\+\_\+\+L\+O\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS@{M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS@{M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9da64dec93d612b579b84194027f43fd875}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9da64dec93d612b579b84194027f43fd875}} 
+M\+I\+N\+I\+M\+\_\+\+N\+O\+\_\+\+L\+O\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR@{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR@{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9daf1f539aa9d9c4a066f21e890fca44c56}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9daf1f539aa9d9c4a066f21e890fca44c56}} 
+S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW@{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW@{S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9da6459d5c19ab64b688ef2732faef80960}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9da6459d5c19ab64b688ef2732faef80960}} 
+S\+A\+V\+E\+\_\+\+G\+R\+A\+P\+H\+\_\+\+BW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q\+U\+IT@{Q\+U\+IT}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!Q\+U\+IT@{Q\+U\+IT}}}\mbox{\Hypertarget{io_8h_a369a6fddbb0e74817c96573ea88b9d9da76bdc8adfd6c6463ab269ff4c06be9b4}\label{io_8h_a369a6fddbb0e74817c96573ea88b9d9da76bdc8adfd6c6463ab269ff4c06be9b4}} 
+Q\+U\+IT&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9}} 
+\index{io.\+h@{io.\+h}!Verssion@{Verssion}}
+\index{Verssion@{Verssion}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{Verssion}{Verssion}}
+{\footnotesize\ttfamily enum \hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+PE@{N\+O\+PE}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!N\+O\+PE@{N\+O\+PE}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9a7e07130e0bea13162408021d61994021}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9a7e07130e0bea13162408021d61994021}} 
+N\+O\+PE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+A\+P\+H\+\_\+\+BW@{G\+R\+A\+P\+H\+\_\+\+BW}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!G\+R\+A\+P\+H\+\_\+\+BW@{G\+R\+A\+P\+H\+\_\+\+BW}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9a5a381b4eb702558ca3a9649c4e688793}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9a5a381b4eb702558ca3a9649c4e688793}} 
+G\+R\+A\+P\+H\+\_\+\+BW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR@{G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR@{G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9af42331660d769fa0d6d73f153ddea9c5}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9af42331660d769fa0d6d73f153ddea9c5}} 
+G\+R\+A\+P\+H\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q\+U\+A\+D\+\_\+\+BW@{Q\+U\+A\+D\+\_\+\+BW}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!Q\+U\+A\+D\+\_\+\+BW@{Q\+U\+A\+D\+\_\+\+BW}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9af0a4fadc79e905023dde32154a19818c}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9af0a4fadc79e905023dde32154a19818c}} 
+Q\+U\+A\+D\+\_\+\+BW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR@{Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR@{Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9af9b1d6f5461b858c009e41e49af50507}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9af9b1d6f5461b858c009e41e49af50507}} 
+Q\+U\+A\+D\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+D\+\_\+\+I\+M\+A\+GE@{S\+T\+D\+\_\+\+I\+M\+A\+GE}!io.\+h@{io.\+h}}\index{io.\+h@{io.\+h}!S\+T\+D\+\_\+\+I\+M\+A\+GE@{S\+T\+D\+\_\+\+I\+M\+A\+GE}}}\mbox{\Hypertarget{io_8h_a5f30136376402d67d35fc7b2e50983d9a690e276cddb6f613322ac8bbc9ae967a}\label{io_8h_a5f30136376402d67d35fc7b2e50983d9a690e276cddb6f613322ac8bbc9ae967a}} 
+S\+T\+D\+\_\+\+I\+M\+A\+GE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{io_8h_a670d56bcb04709b69a4ae94fb886dfd8}\label{io_8h_a670d56bcb04709b69a4ae94fb886dfd8}} 
+\index{io.\+h@{io.\+h}!link\+\_\+btn@{link\+\_\+btn}}
+\index{link\+\_\+btn@{link\+\_\+btn}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{link\+\_\+btn()}{link\_btn()}}
+{\footnotesize\ttfamily int link\+\_\+btn (\begin{DoxyParamCaption}\item[{int}]{btn\+\_\+number,  }\item[{\hyperlink{structWin}{Win} $\ast$}]{info,  }\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$$\ast$}]{t,  }\item[{\hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$}]{color\+\_\+err\+\_\+list,  }\item[{\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion} $\ast$}]{verssion }\end{DoxyParamCaption})}
+
+
+
+This function links the buttons to the functionalities they represents. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em btn\+\_\+number} & an int rorresponding to this button place in the array contained in \textquotesingle{}info\textquotesingle{}. \\
+\hline
+{\em info} & a pointer on all window-\/relevent inforamtion (including the button array.) \\
+\hline
+{\em t} & the address of the pointer on the root of the tree. \\
+\hline
+{\em color\+\_\+err\+\_\+list} & a pointer on the list of color error. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/$>$ problem loading the tree or image (not fatal) 1 -\/$>$ all good. 2 -\/$>$ user asked to quit. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{io_8h_a96531291223b210721944c57b22063e4}\label{io_8h_a96531291223b210721944c57b22063e4}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw@{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw}}
+\index{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw@{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw()}{set\_button\_state\_graph\_bw()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+graph\+\_\+bw (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a .gmn was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a16736344637a9f05174ee7a35a67b1be}\label{io_8h_a16736344637a9f05174ee7a35a67b1be}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color@{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color}}
+\index{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color@{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color()}{set\_button\_state\_graph\_color()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+graph\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a .gmc was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_ab21fefacb448042f281751022e551f6d}\label{io_8h_ab21fefacb448042f281751022e551f6d}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+no\+\_\+image@{set\+\_\+button\+\_\+state\+\_\+no\+\_\+image}}
+\index{set\+\_\+button\+\_\+state\+\_\+no\+\_\+image@{set\+\_\+button\+\_\+state\+\_\+no\+\_\+image}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+no\+\_\+image()}{set\_button\_state\_no\_image()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+no\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a nothing was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a768fad8da091c5289e0176189e7aeec1}\label{io_8h_a768fad8da091c5289e0176189e7aeec1}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw@{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw}}
+\index{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw@{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw()}{set\_button\_state\_quadtree\_bw()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+bw (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a .qtn was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a4568e26282ca1e78c3527fa7a8fa954d}\label{io_8h_a4568e26282ca1e78c3527fa7a8fa954d}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color@{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color}}
+\index{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color@{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color()}{set\_button\_state\_quadtree\_color()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+quadtree\+\_\+color (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a .qtc was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a323b021e4079025caca68759aad876df}\label{io_8h_a323b021e4079025caca68759aad876df}} 
+\index{io.\+h@{io.\+h}!set\+\_\+button\+\_\+state\+\_\+std\+\_\+image@{set\+\_\+button\+\_\+state\+\_\+std\+\_\+image}}
+\index{set\+\_\+button\+\_\+state\+\_\+std\+\_\+image@{set\+\_\+button\+\_\+state\+\_\+std\+\_\+image}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+button\+\_\+state\+\_\+std\+\_\+image()}{set\_button\_state\_std\_image()}}
+{\footnotesize\ttfamily void set\+\_\+button\+\_\+state\+\_\+std\+\_\+image (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a standard image was loaded. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a600dc79145181b397345c547320b5de2}\label{io_8h_a600dc79145181b397345c547320b5de2}} 
+\index{io.\+h@{io.\+h}!set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss@{set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss}}
+\index{set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss@{set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss()}{set\_was\_minimized\_no\_loss()}}
+{\footnotesize\ttfamily void set\+\_\+was\+\_\+minimized\+\_\+no\+\_\+loss (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a quadtree was minimized without loss. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{io_8h_a253eb0d5474572333c1be40a23c1ac22}\label{io_8h_a253eb0d5474572333c1be40a23c1ac22}} 
+\index{io.\+h@{io.\+h}!set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss@{set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss}}
+\index{set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss@{set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss}!io.\+h@{io.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss()}{set\_was\_minimized\_with\_loss()}}
+{\footnotesize\ttfamily void set\+\_\+was\+\_\+minimized\+\_\+with\+\_\+loss (\begin{DoxyParamCaption}\item[{\hyperlink{structButton}{Button} $\ast$}]{array,  }\item[{\hyperlink{io_8h_a5f30136376402d67d35fc7b2e50983d9}{Verssion}}]{verssion }\end{DoxyParamCaption})}
+
+
+
+This function changes the button state to fit the situation where a quadtree was minimized with loss. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & the array storing all the buttons. \\
+\hline
+\end{DoxyParams}

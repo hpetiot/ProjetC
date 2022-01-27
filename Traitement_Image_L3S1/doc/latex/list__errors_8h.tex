@@ -1,0 +1,160 @@
+\hypertarget{list__errors_8h}{}\section{includes/list\+\_\+errors.h File Reference}
+\label{list__errors_8h}\index{includes/list\+\_\+errors.\+h@{includes/list\+\_\+errors.\+h}}
+{\ttfamily \#include \char`\"{}quadtree.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}zone.\+h\char`\"{}}\newline
+Include dependency graph for list\+\_\+errors.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{list__errors_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{list__errors_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structErrorListElement}{Error\+List\+Element}
+\item 
+struct \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structErrorListElement}{Error\+List\+Element} \hyperlink{list__errors_8h_a73ff1284b66d1b6236711f2fec3c6162}{Error\+List\+Element}
+\item 
+typedef struct \hyperlink{structErrorListElement}{Error\+List\+Element} $\ast$ \hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List}
+\item 
+typedef struct \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} \hyperlink{list__errors_8h_a4d2489819c47d5a1da95afa5935355b8}{Error\+List\+\_\+\+First\+Last}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{list__errors_8h_a9436838d3661eac252baefd96ea699ce}{initialize\+\_\+firstlast} (\hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Initialize an \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} (N\+U\+LL). \end{DoxyCompactList}\item 
+void \hyperlink{list__errors_8h_a7b419c8705bffbbcad1690c4feefc534}{free\+\_\+error\+\_\+list} (\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Free an \hyperlink{structErrorListElement}{Error\+List\+Element}. \end{DoxyCompactList}\item 
+void \hyperlink{list__errors_8h_adebf1d95e3d18432ff40f3544c8d1b3d}{print\+\_\+error\+\_\+list} (\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$list)
+\begin{DoxyCompactList}\small\item\em Print an \hyperlink{structErrorListElement}{Error\+List\+Element}. \end{DoxyCompactList}\item 
+int \hyperlink{list__errors_8h_ab80a81c290a79257547d42a58778bcef}{add\+\_\+elem} (\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$list, \hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$last, \hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$leaf, \hyperlink{structZone}{Zone} zone)
+\begin{DoxyCompactList}\small\item\em Add an element in an Error\+List. \end{DoxyCompactList}\item 
+int \hyperlink{list__errors_8h_a0525db8e99bf238ccbf42553361f22b1}{remove\+\_\+elem\+\_\+errorlist} (\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$list, double error)
+\begin{DoxyCompactList}\small\item\em Remove an element from Error\+List by looking at its error value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{list__errors_8h_a90522ae3e839b4beec367e58bc649808}\label{list__errors_8h_a90522ae3e839b4beec367e58bc649808}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!Error\+List@{Error\+List}}
+\index{Error\+List@{Error\+List}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{Error\+List}{ErrorList}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structErrorListElement}{Error\+List\+Element} $\ast$ \hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List}}
+
+\mbox{\Hypertarget{list__errors_8h_a4d2489819c47d5a1da95afa5935355b8}\label{list__errors_8h_a4d2489819c47d5a1da95afa5935355b8}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!Error\+List\+\_\+\+First\+Last@{Error\+List\+\_\+\+First\+Last}}
+\index{Error\+List\+\_\+\+First\+Last@{Error\+List\+\_\+\+First\+Last}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{Error\+List\+\_\+\+First\+Last}{ErrorList\_FirstLast}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last}  \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last}}
+
+\mbox{\Hypertarget{list__errors_8h_a73ff1284b66d1b6236711f2fec3c6162}\label{list__errors_8h_a73ff1284b66d1b6236711f2fec3c6162}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!Error\+List\+Element@{Error\+List\+Element}}
+\index{Error\+List\+Element@{Error\+List\+Element}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{Error\+List\+Element}{ErrorListElement}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structErrorListElement}{Error\+List\+Element}  \hyperlink{structErrorListElement}{Error\+List\+Element}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{list__errors_8h_ab80a81c290a79257547d42a58778bcef}\label{list__errors_8h_ab80a81c290a79257547d42a58778bcef}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!add\+\_\+elem@{add\+\_\+elem}}
+\index{add\+\_\+elem@{add\+\_\+elem}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+elem()}{add\_elem()}}
+{\footnotesize\ttfamily int add\+\_\+elem (\begin{DoxyParamCaption}\item[{\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$}]{list,  }\item[{\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$}]{last,  }\item[{\hyperlink{quadtree_8h_a184f2f10109642ad84b5619bcc5738da}{Tree} $\ast$}]{leaf,  }\item[{\hyperlink{structZone}{Zone}}]{zone }\end{DoxyParamCaption})}
+
+
+
+Add an element in an Error\+List. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list we are adding the element in \\
+\hline
+{\em last} & Pointer of last element of list \\
+\hline
+{\em leaf} & The leaf and its error we are adding \\
+\hline
+{\em zone} & Leaf\textquotesingle{}s zone in the image it\textquotesingle{}s coming from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 we add leaf\textquotesingle{}s and its error in list 0 otherwise (malloc pb) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{list__errors_8h_a7b419c8705bffbbcad1690c4feefc534}\label{list__errors_8h_a7b419c8705bffbbcad1690c4feefc534}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!free\+\_\+error\+\_\+list@{free\+\_\+error\+\_\+list}}
+\index{free\+\_\+error\+\_\+list@{free\+\_\+error\+\_\+list}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+error\+\_\+list()}{free\_error\_list()}}
+{\footnotesize\ttfamily void free\+\_\+error\+\_\+list (\begin{DoxyParamCaption}\item[{\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Free an \hyperlink{structErrorListElement}{Error\+List\+Element}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list we are freeing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{list__errors_8h_a9436838d3661eac252baefd96ea699ce}\label{list__errors_8h_a9436838d3661eac252baefd96ea699ce}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!initialize\+\_\+firstlast@{initialize\+\_\+firstlast}}
+\index{initialize\+\_\+firstlast@{initialize\+\_\+firstlast}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{initialize\+\_\+firstlast()}{initialize\_firstlast()}}
+{\footnotesize\ttfamily void initialize\+\_\+firstlast (\begin{DoxyParamCaption}\item[{\hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Initialize an \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} (N\+U\+LL). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The \hyperlink{structErrorList__FirstLast}{Error\+List\+\_\+\+First\+Last} we are initializing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{list__errors_8h_adebf1d95e3d18432ff40f3544c8d1b3d}\label{list__errors_8h_adebf1d95e3d18432ff40f3544c8d1b3d}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!print\+\_\+error\+\_\+list@{print\+\_\+error\+\_\+list}}
+\index{print\+\_\+error\+\_\+list@{print\+\_\+error\+\_\+list}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+error\+\_\+list()}{print\_error\_list()}}
+{\footnotesize\ttfamily void print\+\_\+error\+\_\+list (\begin{DoxyParamCaption}\item[{\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$}]{list }\end{DoxyParamCaption})}
+
+
+
+Print an \hyperlink{structErrorListElement}{Error\+List\+Element}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list we are printing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{list__errors_8h_a0525db8e99bf238ccbf42553361f22b1}\label{list__errors_8h_a0525db8e99bf238ccbf42553361f22b1}} 
+\index{list\+\_\+errors.\+h@{list\+\_\+errors.\+h}!remove\+\_\+elem\+\_\+errorlist@{remove\+\_\+elem\+\_\+errorlist}}
+\index{remove\+\_\+elem\+\_\+errorlist@{remove\+\_\+elem\+\_\+errorlist}!list\+\_\+errors.\+h@{list\+\_\+errors.\+h}}
+\subsubsection{\texorpdfstring{remove\+\_\+elem\+\_\+errorlist()}{remove\_elem\_errorlist()}}
+{\footnotesize\ttfamily int remove\+\_\+elem\+\_\+errorlist (\begin{DoxyParamCaption}\item[{\hyperlink{list__errors_8h_a90522ae3e839b4beec367e58bc649808}{Error\+List} $\ast$}]{list,  }\item[{double}]{error }\end{DoxyParamCaption})}
+
+
+
+Remove an element from Error\+List by looking at its error value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & explication \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+-\/2 if we couldn\textquotesingle{}t find the error value -\/1 if list is empty 0 if we removed an element 
+\end{DoxyReturn}

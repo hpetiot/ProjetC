@@ -1,0 +1,341 @@
+\hypertarget{button_8h}{}\section{includes/button.h File Reference}
+\label{button_8h}\index{includes/button.\+h@{includes/button.\+h}}
+{\ttfamily \#include $<$M\+L\+V/\+M\+L\+V\+\_\+all.\+h$>$}\newline
+Include dependency graph for button.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{button_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=177pt]{button_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structMouse}{Mouse}
+\item 
+struct \hyperlink{structBox}{Box}
+\item 
+struct \hyperlink{structButton}{Button}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{button_8h_aa6a14d1d8be58caed6952171e0b4c706}{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+S\+E\+A\+\_\+\+G\+R\+E\+EN
+\item 
+\#define \hyperlink{button_8h_a7021af036c5ab0d51c9cae138016e95f}{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+A\+L\+E\+\_\+\+G\+R\+E\+EN
+\item 
+\#define \hyperlink{button_8h_aed0fae86ebe3ab29e6846dc0ab25c32b}{B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+AN
+\item 
+\#define \hyperlink{button_8h_a552c77610827a82c70b55b1d0bdd5ba4}{B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN
+\item 
+\#define \hyperlink{button_8h_a970f18109a00139e94cf28f9f0f65223}{B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+EY
+\item 
+\#define \hyperlink{button_8h_ad9700fecd671cd74fdb9c7540a00a214}{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+Y\+E\+L\+L\+OW
+\item 
+\#define \hyperlink{button_8h_ae130ca39d1a354904dc570eb77d4add0}{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+G\+O\+L\+D\+E\+N\+R\+OD
+\item 
+\#define \hyperlink{button_8h_ab7612caea312bea76733365d5b915bcf}{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+\_\+\+G\+O\+L\+D\+E\+N\+R\+OD
+\item 
+\#define \hyperlink{button_8h_aab30d3dae8b07eaa0de563639180b906}{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+O\+LD
+\item 
+\#define \hyperlink{button_8h_a32bbb00b42053e789e5934187f6dae88}{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+N\+T\+I\+Q\+U\+E\+\_\+\+W\+H\+I\+TE
+\item 
+\#define \hyperlink{button_8h_a085714deb8b077fe2ecacfa7da3ff919}{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+N\+T\+I\+Q\+U\+E\+\_\+\+W\+H\+I\+TE
+\item 
+\#define \hyperlink{button_8h_a32dc1301e17c95894ace0575f20994d5}{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK
+\item 
+\#define \hyperlink{button_8h_a380329c65e2a7a5e7e255aba8ca940b3}{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+A\+I\+N\+S\+B\+O\+RO
+\item 
+\#define \hyperlink{button_8h_a679162ca7bca2ba1b2cfa411683ff06e}{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK
+\item 
+\#define \hyperlink{button_8h_a2ed753768a60cd6fd9b30800e76a1de7}{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN}~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK
+\item 
+\#define \hyperlink{button_8h_aac775283f3d16d035ad1753409e2a632}{B\+T\+N\+\_\+\+H\+E\+I\+G\+HT}~48
+\item 
+\#define \hyperlink{button_8h_ae4103c363ed830afddd072ef363726da}{B\+T\+N\+\_\+\+W\+I\+D\+TH}~175
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844d}{Button\+\_\+state} \{ \newline
+\hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844da13da5684f960f9c5979c7b4d8da465dd}{B\+U\+I\+SY}, 
+\hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844dac0d64bfdd0f176c021eac3fca2be30af}{H\+E\+LD}, 
+\hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844da1e229ccb8b53a57de4ebb11c2d15272e}{A\+V\+A\+I\+L\+A\+B\+LE}, 
+\hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844da8df21af5ed7da4b83ff86f107b52ef75}{H\+O\+V\+ER}, 
+\newline
+\hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844dae099fdefa5afa14f6b23f596c972ce16}{F\+O\+R\+B\+I\+D\+EN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{button_8h_acd0e5c2dc8b53fbad47ce6027726c940}{add\+\_\+button} (int tl\+\_\+x, int tl\+\_\+y, int height, int width, const char $\ast$name, int $\ast$nb\+\_\+button, \hyperlink{structButton}{Button} $\ast$$\ast$array)
+\begin{DoxyCompactList}\small\item\em This function adds a button to the window. \end{DoxyCompactList}\item 
+void \hyperlink{button_8h_a70e1acd3fe18f11cee78040d92fa9879}{free\+\_\+button\+\_\+array} (int nb\+\_\+button, \hyperlink{structButton}{Button} $\ast$$\ast$array)
+\begin{DoxyCompactList}\small\item\em This function frees the buttons allocated by \textquotesingle{}add\+\_\+button\textquotesingle{}. \end{DoxyCompactList}\item 
+void \hyperlink{button_8h_a3c80ef62c406b246a116261e1b1b33b2}{display\+\_\+all\+\_\+button} (int nb\+\_\+button, \hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function displays the buttons according to their \textquotesingle{}state\textquotesingle{} field. \end{DoxyCompactList}\item 
+void \hyperlink{button_8h_a2600cefe39d33af6da45dd6ec3730c12}{print\+\_\+all\+\_\+button} (int nb\+\_\+button, \hyperlink{structButton}{Button} $\ast$array)
+\begin{DoxyCompactList}\small\item\em This function print all button in the array in the console. \end{DoxyCompactList}\item 
+int \hyperlink{button_8h_a08fe0799d78bc25281b9cfd66efe0f4e}{button\+\_\+update} (\hyperlink{structMouse}{Mouse} $\ast$mouse, \hyperlink{structButton}{Button} $\ast$array, int nb\+\_\+button, const M\+L\+V\+\_\+\+Event ev)
+\begin{DoxyCompactList}\small\item\em This function updates the state of the button acording to the mouse events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{button_8h_a552c77610827a82c70b55b1d0bdd5ba4}\label{button_8h_a552c77610827a82c70b55b1d0bdd5ba4}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}{BTN\_BG\_AVAILABLE}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+G\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+E\+EN}
+
+\mbox{\Hypertarget{button_8h_aed0fae86ebe3ab29e6846dc0ab25c32b}\label{button_8h_aed0fae86ebe3ab29e6846dc0ab25c32b}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY}}
+\index{B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY}{BTN\_BG\_BUISY}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+G\+\_\+\+B\+U\+I\+SY~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+T\+AN}
+
+\mbox{\Hypertarget{button_8h_a970f18109a00139e94cf28f9f0f65223}\label{button_8h_a970f18109a00139e94cf28f9f0f65223}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN}}
+\index{B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN}{BTN\_BG\_FORBIDEN}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+G\+\_\+\+F\+O\+R\+B\+I\+D\+EN~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+R\+EY}
+
+\mbox{\Hypertarget{button_8h_a7021af036c5ab0d51c9cae138016e95f}\label{button_8h_a7021af036c5ab0d51c9cae138016e95f}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD}}
+\index{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD}{BTN\_BG\_HELD}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+E\+LD~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+P\+A\+L\+E\+\_\+\+G\+R\+E\+EN}
+
+\mbox{\Hypertarget{button_8h_aa6a14d1d8be58caed6952171e0b4c706}\label{button_8h_aa6a14d1d8be58caed6952171e0b4c706}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER}}
+\index{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER}{BTN\_BG\_HOVER}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+G\+\_\+\+H\+O\+V\+ER~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+S\+E\+A\+\_\+\+G\+R\+E\+EN}
+
+\mbox{\Hypertarget{button_8h_aab30d3dae8b07eaa0de563639180b906}\label{button_8h_aab30d3dae8b07eaa0de563639180b906}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}{BTN\_BODER\_AVAILABLE}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+O\+LD}
+
+\mbox{\Hypertarget{button_8h_ab7612caea312bea76733365d5b915bcf}\label{button_8h_ab7612caea312bea76733365d5b915bcf}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY}}
+\index{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY}{BTN\_BODER\_BUISY}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+B\+U\+I\+SY~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+D\+A\+R\+K\+\_\+\+G\+O\+L\+D\+E\+N\+R\+OD}
+
+\mbox{\Hypertarget{button_8h_a32bbb00b42053e789e5934187f6dae88}\label{button_8h_a32bbb00b42053e789e5934187f6dae88}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN}}
+\index{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN}{BTN\_BODER\_FORBIDEN}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+F\+O\+R\+B\+I\+D\+EN~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+N\+T\+I\+Q\+U\+E\+\_\+\+W\+H\+I\+TE}
+
+\mbox{\Hypertarget{button_8h_ae130ca39d1a354904dc570eb77d4add0}\label{button_8h_ae130ca39d1a354904dc570eb77d4add0}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD}}
+\index{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD}{BTN\_BODER\_HELD}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+E\+LD~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+L\+I\+G\+H\+T\+\_\+\+G\+O\+L\+D\+E\+N\+R\+OD}
+
+\mbox{\Hypertarget{button_8h_ad9700fecd671cd74fdb9c7540a00a214}\label{button_8h_ad9700fecd671cd74fdb9c7540a00a214}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER}}
+\index{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER}{BTN\_BODER\_HOVER}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+B\+O\+D\+E\+R\+\_\+\+H\+O\+V\+ER~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+Y\+E\+L\+L\+OW}
+
+\mbox{\Hypertarget{button_8h_aac775283f3d16d035ad1753409e2a632}\label{button_8h_aac775283f3d16d035ad1753409e2a632}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+H\+E\+I\+G\+HT@{B\+T\+N\+\_\+\+H\+E\+I\+G\+HT}}
+\index{B\+T\+N\+\_\+\+H\+E\+I\+G\+HT@{B\+T\+N\+\_\+\+H\+E\+I\+G\+HT}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+H\+E\+I\+G\+HT}{BTN\_HEIGHT}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+H\+E\+I\+G\+HT~48}
+
+\mbox{\Hypertarget{button_8h_a679162ca7bca2ba1b2cfa411683ff06e}\label{button_8h_a679162ca7bca2ba1b2cfa411683ff06e}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}
+\index{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}{BTN\_TEXT\_AVAILABLE}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK}
+
+\mbox{\Hypertarget{button_8h_a380329c65e2a7a5e7e255aba8ca940b3}\label{button_8h_a380329c65e2a7a5e7e255aba8ca940b3}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY}}
+\index{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY}{BTN\_TEXT\_BUISY}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+B\+U\+I\+SY~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+G\+A\+I\+N\+S\+B\+O\+RO}
+
+\mbox{\Hypertarget{button_8h_a2ed753768a60cd6fd9b30800e76a1de7}\label{button_8h_a2ed753768a60cd6fd9b30800e76a1de7}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN}}
+\index{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN}{BTN\_TEXT\_FORBIDEN}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+F\+O\+R\+B\+I\+D\+EN~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK}
+
+\mbox{\Hypertarget{button_8h_a32dc1301e17c95894ace0575f20994d5}\label{button_8h_a32dc1301e17c95894ace0575f20994d5}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD}}
+\index{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD}{BTN\_TEXT\_HELD}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+E\+LD~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+B\+L\+A\+CK}
+
+\mbox{\Hypertarget{button_8h_a085714deb8b077fe2ecacfa7da3ff919}\label{button_8h_a085714deb8b077fe2ecacfa7da3ff919}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER}}
+\index{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER@{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER}{BTN\_TEXT\_HOVER}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+T\+E\+X\+T\+\_\+\+H\+O\+V\+ER~M\+L\+V\+\_\+\+C\+O\+L\+O\+R\+\_\+\+A\+N\+T\+I\+Q\+U\+E\+\_\+\+W\+H\+I\+TE}
+
+\mbox{\Hypertarget{button_8h_ae4103c363ed830afddd072ef363726da}\label{button_8h_ae4103c363ed830afddd072ef363726da}} 
+\index{button.\+h@{button.\+h}!B\+T\+N\+\_\+\+W\+I\+D\+TH@{B\+T\+N\+\_\+\+W\+I\+D\+TH}}
+\index{B\+T\+N\+\_\+\+W\+I\+D\+TH@{B\+T\+N\+\_\+\+W\+I\+D\+TH}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{B\+T\+N\+\_\+\+W\+I\+D\+TH}{BTN\_WIDTH}}
+{\footnotesize\ttfamily \#define B\+T\+N\+\_\+\+W\+I\+D\+TH~175}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844d}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844d}} 
+\index{button.\+h@{button.\+h}!Button\+\_\+state@{Button\+\_\+state}}
+\index{Button\+\_\+state@{Button\+\_\+state}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{Button\+\_\+state}{Button\_state}}
+{\footnotesize\ttfamily enum \hyperlink{button_8h_a01cda3effbb71c7c203e4f9716e8844d}{Button\+\_\+state}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+U\+I\+SY@{B\+U\+I\+SY}!button.\+h@{button.\+h}}\index{button.\+h@{button.\+h}!B\+U\+I\+SY@{B\+U\+I\+SY}}}\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844da13da5684f960f9c5979c7b4d8da465dd}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844da13da5684f960f9c5979c7b4d8da465dd}} 
+B\+U\+I\+SY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+E\+LD@{H\+E\+LD}!button.\+h@{button.\+h}}\index{button.\+h@{button.\+h}!H\+E\+LD@{H\+E\+LD}}}\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844dac0d64bfdd0f176c021eac3fca2be30af}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844dac0d64bfdd0f176c021eac3fca2be30af}} 
+H\+E\+LD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{A\+V\+A\+I\+L\+A\+B\+LE@{A\+V\+A\+I\+L\+A\+B\+LE}!button.\+h@{button.\+h}}\index{button.\+h@{button.\+h}!A\+V\+A\+I\+L\+A\+B\+LE@{A\+V\+A\+I\+L\+A\+B\+LE}}}\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844da1e229ccb8b53a57de4ebb11c2d15272e}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844da1e229ccb8b53a57de4ebb11c2d15272e}} 
+A\+V\+A\+I\+L\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{H\+O\+V\+ER@{H\+O\+V\+ER}!button.\+h@{button.\+h}}\index{button.\+h@{button.\+h}!H\+O\+V\+ER@{H\+O\+V\+ER}}}\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844da8df21af5ed7da4b83ff86f107b52ef75}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844da8df21af5ed7da4b83ff86f107b52ef75}} 
+H\+O\+V\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+B\+I\+D\+EN@{F\+O\+R\+B\+I\+D\+EN}!button.\+h@{button.\+h}}\index{button.\+h@{button.\+h}!F\+O\+R\+B\+I\+D\+EN@{F\+O\+R\+B\+I\+D\+EN}}}\mbox{\Hypertarget{button_8h_a01cda3effbb71c7c203e4f9716e8844dae099fdefa5afa14f6b23f596c972ce16}\label{button_8h_a01cda3effbb71c7c203e4f9716e8844dae099fdefa5afa14f6b23f596c972ce16}} 
+F\+O\+R\+B\+I\+D\+EN&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{button_8h_acd0e5c2dc8b53fbad47ce6027726c940}\label{button_8h_acd0e5c2dc8b53fbad47ce6027726c940}} 
+\index{button.\+h@{button.\+h}!add\+\_\+button@{add\+\_\+button}}
+\index{add\+\_\+button@{add\+\_\+button}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+button()}{add\_button()}}
+{\footnotesize\ttfamily int add\+\_\+button (\begin{DoxyParamCaption}\item[{int}]{tl\+\_\+x,  }\item[{int}]{tl\+\_\+y,  }\item[{int}]{height,  }\item[{int}]{width,  }\item[{const char $\ast$}]{name,  }\item[{int $\ast$}]{nb\+\_\+button,  }\item[{\hyperlink{structButton}{Button} $\ast$$\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function adds a button to the window. 
+
+any number of call to this function must be matched by 1 call to \textquotesingle{}free\+\_\+button\+\_\+array\textquotesingle{} note\+: this function uses the \char`\"{}reallocarray\char`\"{} function (cf man 3 malloc), on available on debian10 \char`\"{}buster\char`\"{}. 
+\begin{DoxyParams}{Parameters}
+{\em tl\+\_\+x} & an int giving the horizontal coordinate of the top left corner of the button. \\
+\hline
+{\em tl\+\_\+y} & an int giving the vertical coordinatte of the top left corner of the button. \\
+\hline
+{\em height} & an int giving the height of the button. \\
+\hline
+{\em width} & an int giving the width of the button. \\
+\hline
+{\em name} & a constant character strung that will be displayed in the middle of the button. \\
+\hline
+{\em nb\+\_\+button} & a pointer on the number of button held in the window managment structure. \\
+\hline
+{\em array} & a pointer on the array of button held in the window managment structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/$>$ alll good; -\/1 -\/$>$ memory allocation error. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a08fe0799d78bc25281b9cfd66efe0f4e}\label{button_8h_a08fe0799d78bc25281b9cfd66efe0f4e}} 
+\index{button.\+h@{button.\+h}!button\+\_\+update@{button\+\_\+update}}
+\index{button\+\_\+update@{button\+\_\+update}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{button\+\_\+update()}{button\_update()}}
+{\footnotesize\ttfamily int button\+\_\+update (\begin{DoxyParamCaption}\item[{\hyperlink{structMouse}{Mouse} $\ast$}]{mouse,  }\item[{\hyperlink{structButton}{Button} $\ast$}]{array,  }\item[{int}]{nb\+\_\+button,  }\item[{const M\+L\+V\+\_\+\+Event}]{ev }\end{DoxyParamCaption})}
+
+
+
+This function updates the state of the button acording to the mouse events. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mouse} & a pointer on the structure holding all mouse information. \\
+\hline
+{\em array} & the array holding the buttons. \\
+\hline
+{\em nb\+\_\+button} & the number of button in the array. \\
+\hline
+{\em ev} & the type of mouse event found. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nb\+\_\+button -\/$>$ no clic happened; \mbox{[}0; nb\+\_\+button\mbox{[} -\/$>$ the designeated member of array was clicked. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a3c80ef62c406b246a116261e1b1b33b2}\label{button_8h_a3c80ef62c406b246a116261e1b1b33b2}} 
+\index{button.\+h@{button.\+h}!display\+\_\+all\+\_\+button@{display\+\_\+all\+\_\+button}}
+\index{display\+\_\+all\+\_\+button@{display\+\_\+all\+\_\+button}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{display\+\_\+all\+\_\+button()}{display\_all\_button()}}
+{\footnotesize\ttfamily void display\+\_\+all\+\_\+button (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+button,  }\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function displays the buttons according to their \textquotesingle{}state\textquotesingle{} field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+button} & the number of button in the array. \\
+\hline
+{\em array} & the array holding the buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a70e1acd3fe18f11cee78040d92fa9879}\label{button_8h_a70e1acd3fe18f11cee78040d92fa9879}} 
+\index{button.\+h@{button.\+h}!free\+\_\+button\+\_\+array@{free\+\_\+button\+\_\+array}}
+\index{free\+\_\+button\+\_\+array@{free\+\_\+button\+\_\+array}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{free\+\_\+button\+\_\+array()}{free\_button\_array()}}
+{\footnotesize\ttfamily void free\+\_\+button\+\_\+array (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+button,  }\item[{\hyperlink{structButton}{Button} $\ast$$\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function frees the buttons allocated by \textquotesingle{}add\+\_\+button\textquotesingle{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+button} & the number of buttons in the array.  a pointer on the array holding the buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8h_a2600cefe39d33af6da45dd6ec3730c12}\label{button_8h_a2600cefe39d33af6da45dd6ec3730c12}} 
+\index{button.\+h@{button.\+h}!print\+\_\+all\+\_\+button@{print\+\_\+all\+\_\+button}}
+\index{print\+\_\+all\+\_\+button@{print\+\_\+all\+\_\+button}!button.\+h@{button.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+all\+\_\+button()}{print\_all\_button()}}
+{\footnotesize\ttfamily void print\+\_\+all\+\_\+button (\begin{DoxyParamCaption}\item[{int}]{nb\+\_\+button,  }\item[{\hyperlink{structButton}{Button} $\ast$}]{array }\end{DoxyParamCaption})}
+
+
+
+This function print all button in the array in the console. 
+
+It is meant for debugging. 
+\begin{DoxyParams}{Parameters}
+{\em nb\+\_\+button} & the number of button in the array. \\
+\hline
+{\em array} & the array holding the buttons. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing. 
+\end{DoxyReturn}
